@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <div class="superheader">
+    <nav id="desktop-nav">
+    <div class="logo">
+      <a href="http://rahulhemalshah.infinityfreeapp.com" class="no-hover">Rahul Hemal Shah</a>
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <!-- <li><a href="#projects">Projects</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Rahul Hemal Shah</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+  </nav>
+  <section id="profile">
+    <div class="section_pic">
+      <img src="./assets/image_about.png" alt="Rahul's Display picture" class="about-pic">
+    </div>
+    <div class="section_text">
+      <p class="section_text_p1">Hello, I'm</p>
+      <h1 class="title">Rahul Hemal Shah</h1>
+      <p class="section_text_p2">Currently pursuing Masters in Computer Science <br> at <u>University of Massachusetts, Amherst</u></p>
+      <br>
+      <button
+        class ="button-85" role="button"
+        onclick="window.open('./assets/Rahul_Resume_latest.pdf')"> Download Resume
+      </button>
+      <div id="socials">
+        <img src="./assets/linkedin.png" 
+        alt="My linkedin profile" 
+        class="icon"
+        onclick="location.href='https://www.linkedin.com/in/rahulshah1799/'">
+      </div>
+    </div>
+  </section>
+  </div>
+  <section id="about">
+    <p class="section_text_p2">Get to Know Me!</p>
+    <h1 class="title">About Me</h1>
+    <div class="about-container">
+      <div class="about-leftside">
+        <div class="section_pic-about">
+          <img src="./assets/IMG_9868.png" alt="Rahul's Display picture" class="about-pic-new">
+        </div >
+        <div>
+          <div class="about-text-container">
+            <p><br>I am looking for Summer Internships and Co-Op's, <br> Available from May 15, 2024</p>
+          </div>
+        </div>
+        <!-- <div class="about-text-container">
+          <p>I am <strong>Rahul Hemal Shah</strong>, is currently pursuing my Masters degree in Computer Science at University of Massachusetts, Amherst. I am seeking an internship opportunity at a company. Having built a strong foundation in computer science, I can leverage my industry experience having worked for 2 years as a <b>Front-End Developer</b> at <b>Schlumberger</b>. I feel that I possess the right skill set and expertise to do well in any suitable internship role and provided a platform I will gain valuable exposure and will seek to deliver results. </p>
+        </div> -->
+      </div>
+      <div class="about-details-container">
+        <div class="about-container">
+          <div class="icontainer">
+            <div class="post">
+              <div class="header_post">
+                <img src="./assets/IMG_0183.png" alt="Photo">
+              </div>
+        
+              <div class="body_post">
+                <div class="post_content">
+        
+                  <h2>Schlumberger (SLB)</h2>
+                  <p><strong>Front-End Developer</strong> at Schlumberger, Developed reusable and configurable components using React, TypeScript and PowerApps, Built applications using C# and .NET 6</p>
+        
+                  <div class="container_infos">
+                    <div class="postedBy">
+                      <span>Duration</span>
+                      Aug 2021 - Aug 2023 (2 Years)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="icontainer">
+            <div class="post">
+              <div class="header_post">
+                  <img src="./assets/IMG_0955.png" alt="Photo">
+              </div>
+              <div class="body_post">
+                <div class="post_content">
+                  <h2>University of Massachusetts Amherst</h2>
+                  <p><strong>Masters of Science in Computer Science</strong> with a CGPA of 3.9/4 enrolled in the following courses: Advanced Algorithms, Machine Learning, Systems for Data Science, Advanced NLP, Information Retrieval</p>
+                  <div class="container_infos">
+                    <div class="postedBy">
+                        <span>Duration</span>
+                        Sep 2023 - May 2025 (In Progress)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#skills'">
+  </section>
+  <section id="skills">
+    <p class="section_text_p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+   
+<div class="tabs">
+  <input class="input" name="tabs" type="radio" id="tab-1" checked="checked"/>
+  <label class="label" for="tab-1">Programming Languages</label>
+  <div class="panel">
+    <h4>C/C++</h4>
+    <h4>Python</h4>
+    <h4>C#</h4>
+    <h4>SQL</h4>
+    <h4>HTML/CSS</h4>
+    <h4>Javascript</h4>
+    <h4>Typescript</h4>
+    <h4>Linux CLI</h4>
+    <h4>Shell Scripting</h4>
+  </div>
+  <input class="input" name="tabs" type="radio" id="tab-2"/>
+  <label class="label" for="tab-2">Frameworks</label>
+  <div class="panel">
+    <h4>ReactJS</h4> <h4>TensorFlow</h4>
+    <h4>PySpark</h4> <h4>Apache Kafka</h4>
+    <h4>Scikit‐learn</h4><h4>Git</h4>
+  </div>
+  <input class="input" name="tabs" type="radio" id="tab-3"/>
+  <label class="label" for="tab-3">Developer Tools</label>
+  <div class="panel">
+    <h4>Microsoft Azure</h4><h4>Azure Functions</h4>
+    <h4>Logic Apps</h4><h4>AWS</h4>
+    <h4>Azure DevOps</h4><h4>Postman</h4>
+  </div>
+</div>
+    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+  </section>
+  <section id="contact">
+    <p class="section_text_p2">Get In Touch!</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="content">
+      <div class="card">
+        <div class="card__side card__side--front">
+          <!-- Front Content -->
+          <div class="card__cont">
+            <span class="blue">alert</span>
+            <span>(<span class="green">'Hover Here!!'</span>)</span>
+          </div>
+        </div>
+        <div class="card__side card__side--back">
+          <!-- Back Content -->
+          <div class="card__cta">
+            <p><span class="purple">const</span> <span class="white">aboutMe</span> <span class="cyan">=</span> <span class="white">{</span>
+              <br />
+              <span class="space red">Name</span>
+              <span class="cyan">:</span> <span class="green">Rahul Hemal Shah</span>
+              <br/>
+              <span class="space red">Email</span>
+              <span class="cyan">:</span> <span class="green">rahulshah1799@gmail.com</span>
+              <br/>
+              <span class="space red">University Email</span>
+              <span class="cyan">:</span>
+              <span class="green">rhshah@umass.edu</span>
+              <br/>
+              <span class="space red">Website </span><span class="cyan">:</span> <span class="green">rahulhemalshah.infinityfreeapp.com</span>
+              <br/>
+              <span class="space red">linkedin</span>
+              <span class="cyan">:</span>
+              <span class="green">www.linkedin.com/in/rahulshah1799/</span>
+              <br/> 
+              <span class="white">};</span>
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
